@@ -16,6 +16,8 @@ class DegreesConverter
       ((value * 9) / 5) + 32
     when 'K'
       value + 273
+    when 'C'
+      value
     end
   end
 
@@ -25,6 +27,8 @@ class DegreesConverter
       (value - 273) * 9 / 5 + 32
     when 'C'
       value - 273
+    when 'K'
+      value
     end
   end
 
@@ -34,6 +38,8 @@ class DegreesConverter
       (value - 32) * 5 / 9
     when 'K'
       (value - 32) * 5 / 9 + 273
+    when 'F'
+      value
     end
   end
 end
