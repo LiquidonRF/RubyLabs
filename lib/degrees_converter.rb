@@ -22,7 +22,7 @@ class DegreesConverter
     def self.convert_from_k(value, to)
         case to
         when 'F'
-            ((value * 9) / 5) - 495
+            (value - 273) * 9 / 5 + 32
         when 'C'
             value - 273
         end
@@ -31,9 +31,9 @@ class DegreesConverter
     def self.convert_from_f(value, to)
         case to
         when 'C'
-            ((value - 32) * 5) / 9
+            (value - 32) * 5 / 9
         when 'K'
-            ((value + 459) * 5) / 9
+            (value - 32) * 5 / 9 + 273
         end
     end
 end

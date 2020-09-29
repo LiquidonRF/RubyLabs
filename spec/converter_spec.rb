@@ -20,11 +20,11 @@ RSpec.describe DegreesConverter do
         end
 
         context 'From F to C' do
-            it { expect(DegreesConverter.convert(15, 'F', 'C')).to eq -9 }
+            it { expect(DegreesConverter.convert(15, 'F', 'C')).to eq -10 }
         end
 
         context 'From F to K' do
-            it { expect(DegreesConverter.convert(15, 'F', 'K')).to eq 264 }
+            it { expect(DegreesConverter.convert(15, 'F', 'K')).to eq 263 }
         end
     end
 end
